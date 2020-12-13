@@ -14,3 +14,10 @@ functions:
           path: hello
           method: get
           cors: true
+  postHello:
+    handler: handler.postHello
+     events:
+      - http:
+          path: postHello
+          method: get
+          cors: true        
