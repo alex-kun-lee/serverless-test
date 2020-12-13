@@ -3,7 +3,7 @@ app: serverless-test
 provider:
   name: aws
   runtime: nodejs12.x
-  stage: ${opt:stage, "test"}
+  stage: ${opt:stage, "dev"}
   region: us-west-2
 functions:
   hellothere:
