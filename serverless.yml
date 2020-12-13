@@ -1,6 +1,5 @@
 service: serverless-test
 app: serverless-test
-org: alexkunlee
 provider:
   name: aws
   runtime: nodejs12.x
