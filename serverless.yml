@@ -1,7 +1,17 @@
 service: serverless-test
+app: serverless-test
+org: alexkunlee
 provider:
   name: aws
   profile: default
   runtime: nodejs12.x
   stage: ${opt:stage, "test"}
   region: us-west-2
+functions:
+  hello:
+     handler: handler.hello
+     events:
+      - http:
+          path: hello
+          method: get
+          cors: true
