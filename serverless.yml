@@ -7,10 +7,10 @@ provider:
   stage: ${opt:stage, "test"}
   region: us-west-2
 functions:
-  hello:
-    handler: handler.hello
+  hellothere:
+    handler: handler.hellothere
     events:
       - http:
-          path: hello
+          path: hellothere
           method: get
-          cors: true    
+          cors: true
